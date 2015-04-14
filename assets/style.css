@@ -1,0 +1,52 @@
+body {
+  margin           : 0px;
+  color            : white;
+  background-color : black;
+  background-image : url( 'img/back.jpg' );
+  background-size  : cover;
+  background-repeat: no-repeat;
+}
+
+canvas {
+  position: absolute;
+}
+
+.coverScreen {
+  position: absolute;
+  top     : 0;
+  left    : 0;
+  right   : 0;
+  bottom  : 0;
+}
+
+.layer {
+  background-color: rgba( 50, 50, 50, 0.8 );
+  padding : 20px;
+}
+
+#formLogin {
+  position   : absolute;
+  left       : 50%;
+  margin-left: -150px;
+  width      : 300px;
+  height     : 400px;
+  top        : 50%;
+  margin-top : -150px;
+}
+
+#mainLoader .content {
+  position   : absolute;
+  top        : 50%;
+  left       : 50%;
+  width      : 30%;
+  margin-left: -15%;
+}
+#mainLoader .state {
+  font-size  : 170%;
+  font-weight: bold;
+  text-align : center;
+}
+
+.gameIcon {
+  text-align: center;
+}

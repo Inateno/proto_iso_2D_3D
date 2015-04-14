@@ -1,0 +1,59 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Meuporg protos</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+  </head>
+    <body>
+      <div id="render" style="position:relative"></div>
+      
+      <div class="coverScreen">
+        <div id="formLogin" class="layer" style="display:none">
+          <div class="gameIcon">
+            <img src="assets/img/logo.PNG" class="img-rounded" style="width:128px;height:128px;"/>
+          </div>
+          <div class="form-group">
+            <label class="" for="login">Login</label>
+            <input class="form-control" type="text" name="login" id="login" tabindex="1" autofocus=true value="inateno" />
+          </div>
+          
+          <div class="form-group">
+            <label class="" for="passwd">Password</label>
+            <input class="form-control" type="password" name="passwd" id="passwd" tabindex="2" value="Inateno?" />
+          </div>
+          
+          <div class="checkbox">
+            <label for="rememberMe">
+              <input type="checkbox" name="rememberMe" id="rememberMe" tabindex="3" /> Remember me
+            </label>
+          </div>
+          
+          <div class="row">
+            <button class="col-md-5 btn btn-default">Register</button>
+            <button class="col-md-offset-2 col-md-5 btn btn-primary loginBtn">Login</button>
+          </div>
+            
+        </div>
+        
+        <div id="mainLoader" class="coverScreen layer">
+          <div class="content">
+            <div class="state">Loading engine</div>
+            <div class="progress progress-striped active main">
+              <div class="progress-bar"  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                <span class="sr-only">45% Complete</span>
+              </div>
+            </div>
+            <div class="progress progress-striped active image" style="display:none">
+              <div class="progress-bar progress-bar-warning"  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                <span class="value"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script type="text/javascript" src="js/ext_libs/require.js" data-main="js/custom/main"></script>
+    </body>
+</html>
